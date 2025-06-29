@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Instructions - Remove Tagline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            max-width: 800px;
+        }
+        h1 {
+            color: #39644a;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .file-path {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #39644a;
+        }
+        .instructions {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Instructions to Remove "Rambut Sehat, Praktis Tanpa Ribet" Tagline</h1>
+    
+    <p>Please make the following changes to remove the tagline from your website:</p>
+    
+    <div class="instructions">
+        <p class="file-path">1. Edit components/layout/Footer.tsx:</p>
+        <p>Find and remove the entire h2 element (line ~63):</p>
+        <pre>&lt;h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white"&gt;Rambut Sehat, Praktis Tanpa Ribet&lt;/h2&gt;</pre>
+        
+        <p>The motion.div should be empty after editing. The edited code should look like this:</p>
+        <pre>
+&lt;motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="text-center mb-10 sm:mb-14 md:mb-16"
+&gt;
+&lt;/motion.div&gt;</pre>
+    </div>
+    
+    <div class="instructions">
+        <p class="file-path">2. Edit components/sections/StoreLinks.tsx:</p>
+        <p>Find and remove the entire h2 element (line ~123):</p>
+        <pre>&lt;h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-text-primary"&gt;Rambut Sehat, Praktis Tanpa Ribet&lt;/h2&gt;</pre>
+        
+        <p>The motion.div should be empty after editing. The edited code should look like this:</p>
+        <pre>
+&lt;motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.6, duration: 0.5 }}
+  className="text-center mt-8 sm:mt-12"
+&gt;
+&lt;/motion.div&gt;</pre>
+    </div>
+    
+    <p>After making these changes, save the files and refresh your website to see the changes.</p>
+</body>
+</html> 
