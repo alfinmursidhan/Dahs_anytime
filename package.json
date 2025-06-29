@@ -1,4 +1,5 @@
 {
+  "homepage": "https://alfinmursidhan.github.io/Dahs_anytime",
   "name": "nobadhair-clone",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "next lint",
     "download-fonts": "node download-fonts.js",
     "clean": "rimraf .next && rimraf node_modules/.cache"

@@ -19,9 +19,7 @@ const LoadingFallback = () => (
   </div>
 );
 
-/**
- * Home page component
- */
+
 export default function Home() {
   return (
     <main>
