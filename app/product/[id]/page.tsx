@@ -1,4 +1,5 @@
-
+// 1. TAMBAHKAN BARIS INI TEPAT DI ATAS, JANGAN DI TEMPAT LAIN
+"use client";
 
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
@@ -8,7 +9,7 @@ import { motion } from 'framer-motion';
 import { FiChevronRight, FiStar, FiCheck } from 'react-icons/fi';
 import ProductShowcase from '@/components/products/ProductShowcase';
 import { Product } from '@/types';
-import Head from 'next/head';
+// 2. IMPORT 'Head' SUDAH DIHAPUS KARENA TIDAK DIGUNAKAN DI APP ROUTER
 import { products } from './products';
 
 // Define products database type
@@ -16,34 +17,18 @@ interface ProductsDatabase {
   [key: string]: Product;
 }
 
-// This is a client component, but we can still generate metadata
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const product = products[params.id];
-  
-  if (!product) {
-    return {
-      title: 'Product Not Found - No Bad Hair',
-      description: 'The product you are looking for does not exist.',
-    };
-  }
-  
-  return {
-    title: `${product.name} - No Bad Hair`,
-    description: product.description,
-  };
-}
+// 3. FUNGSI 'generateMetadata' DIHAPUS DARI SINI
+//    Alasan: Fungsi ini hanya bisa berjalan di Server Component,
+//    sedangkan file ini sudah kita ubah menjadi Client Component ("use client").
 
 export default function ProductDetail({ params }: { params: { id: string } }) {
-  // In a real application, you would fetch the product data from an API
+  // Logika untuk mengambil data produk tetap sama
   const product = products[params.id];
-  
+
   if (!product) {
     return (
       <main className="min-h-screen">
-        <Head>
-          <title>Product Not Found - No Bad Hair</title>
-          <meta name="description" content="The product you are looking for does not exist." />
-        </Head>
+        {/* 4. SEMUA KOMPONEN <Head>...</Head> HARUS DIHAPUS */}
         <Navbar />
         <div className="pt-32 pb-20 container-padding mx-auto text-center">
           <h1 className="heading-lg mb-6">Product Not Found</h1>
@@ -61,10 +46,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
   
   return (
     <main className="min-h-screen">
-      <Head>
-        <title>{`${product.name} - No Bad Hair`}</title>
-        <meta name="description" content={product.description} />
-      </Head>
+      {/* 4. SEMUA KOMPONEN <Head>...</Head> HARUS DIHAPUS */}
       <Navbar />
       
       <div className="pt-32 pb-12">
@@ -98,6 +80,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
+              {/* Sisa dari kode JSX Anda tetap sama persis */}
               <h1 className="heading-lg mb-2">{product.name}</h1>
               
               <div className="flex items-center mb-4">
@@ -129,7 +112,7 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
                 </ul>
               </div>
               
-              <div className="mb-8">
+              <div className="mb-8 mt-6">
                 <label htmlFor="quantity" className="block text-gray-700 mb-2">Quantity</label>
                 <div className="flex">
                   <input
@@ -163,4 +146,4 @@ export default function ProductDetail({ params }: { params: { id: string } }) {
       <Footer />
     </main>
   );
-} 
+}
