@@ -13,6 +13,7 @@
   --transition-ease: cubic-bezier(0.65, 0, 0.35, 1);
   --font-the-seasons: 'The Seasons', serif;
   --font-yeseva-one: 'Yeseva One', serif;
+  --font-helvetica-neue: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,6 +63,13 @@ h1, h2, .heading-xl, .heading-lg {
   font-family: var(--font-yeseva-one);
   letter-spacing: 0.02em;
   font-weight: 700;
+}
+
+/* Font Helvetica Neue Bold untuk tagline utama */
+.font-helvetica-neue-bold {
+  font-family: var(--font-helvetica-neue);
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 /* Kustomisasi subteks menggunakan The Seasons */
@@ -330,4 +338,4 @@ body {
   height: 10px;
   background-color: var(--secondary);
   z-index: 2;
-} 
+}

@@ -50,7 +50,7 @@ const EthicalSection = () => {
             <div className="max-w-xl mx-auto lg:mx-0">
               <div className="h-1 bg-accent mb-4 sm:mb-8 w-0"></div>
               
-              <h2 className="font-yeseva heading-lg mb-4 sm:mb-8 relative text-text-primary">
+              <h2 className="font-helvetica-neue-bold heading-lg mb-4 sm:mb-8 relative text-text-primary">
                 <span className="relative z-10">ETHICALLY MADE</span>
                 <br />
                 <span className="relative z-10">WITH GOOD PURPOSE</span>
@@ -131,7 +131,7 @@ const EthicalSection = () => {
               className="h-1 bg-accent mb-4 sm:mb-8"
             />
             
-            <h2 className="font-yeseva heading-lg mb-4 sm:mb-8 relative text-text-primary">
+            <h2 className="font-helvetica-neue-bold heading-lg mb-4 sm:mb-8 relative text-text-primary">
               <span className="relative z-10">ETHICALLY MADE</span>
               <br />
               <span className="relative z-10">WITH GOOD PURPOSE</span>

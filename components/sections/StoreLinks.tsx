@@ -33,7 +33,7 @@ const StoreLinks = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-6 sm:mb-10"
         >
-          <h2 className="heading-lg mb-3 sm:mb-4 text-text-primary text-3xl sm:text-4xl md:text-5xl">OFFICIAL STORES</h2>
+          <h2 className="font-helvetica-neue-bold mb-3 sm:mb-4 text-text-primary text-3xl sm:text-4xl md:text-5xl">OFFICIAL STORES</h2>
           <p className="max-w-2xl mx-auto text-text-primary/80 text-sm sm:text-base px-4 sm:px-0">
             Get our exclusive offers only at our official stores.
           </p>

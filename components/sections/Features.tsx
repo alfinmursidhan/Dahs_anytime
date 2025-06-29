@@ -67,7 +67,7 @@ const Features = () => {
             className="w-full md:w-1/3 flex flex-col justify-center md:py-10 mb-4 md:mb-0"
           >
             <h3 className="text-base sm:text-lg font-medium mb-1 text-text-primary">Jelajahi Produk</h3>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-text-primary">Terpopuler Kami</h2>
+            <h2 className="font-helvetica-neue-bold text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 text-text-primary">Terpopuler Kami</h2>
             <p className="text-text-primary/80 mb-4 sm:mb-6 text-sm sm:text-base">
               Temukan produk-produk unggulan kami yang telah dipercaya oleh banyak pelanggan. 
               Dirancang dengan formula alami untuk hasil terbaik.

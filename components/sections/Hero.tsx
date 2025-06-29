@@ -120,12 +120,12 @@ const Hero = () => {
         <div className="flex flex-col items-start justify-center">
           {/* Center Content */}
           <div className="w-full text-text-primary mb-16">
-            {/* Main heading with Yeseva One font */}
+            {/* Main heading with Helvetica Neue Bold font */}
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="font-yeseva heading-xl mb-10 md:mb-8 relative text-primary"
+              className="font-helvetica-neue-bold heading-xl mb-10 md:mb-8 relative text-primary"
               style={{ 
                 letterSpacing: "0.02em", 
                 fontSize: "clamp(2.5rem, 10vw, 5.5rem)",

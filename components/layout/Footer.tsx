@@ -47,7 +47,7 @@ const Footer = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-4 sm:mb-10 md:mb-12 flex flex-col items-center"
         >
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-2 sm:mb-6">RAMBUT SEHAT, PRAKTIS TANPA RIBET</h2>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-helvetica-neue-bold text-white mb-2 sm:mb-6">RAMBUT SEHAT, PRAKTIS TANPA RIBET</h2>
           <div className="relative w-20 h-20 sm:w-40 sm:h-40 mx-auto">
             <Image 
               src="/images/LOGObg.png"
